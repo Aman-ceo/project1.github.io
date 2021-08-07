@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/50fc528af0.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            z-index: 1000;
+            display: flex;
+            position: sticky;
+            top: 0;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            width: 8%;
+            height: 78%;
+            border: 2px solid white;
+            border-radius: 56px;
+        }
+
+        .ulist {
+            display: flex;
+            align-items: center;
+            width: 50%;
+        }
+
+        .rinav {
+            width: 50%;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            padding: 20px;
+            list-style: none;
+        }
+
+        .ulist li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .traveltext {
+            position: absolute;
+            top: 204px;
+            left: 88px;
+            right: 117px;
+            font-family: cursive;
+            z-index: 8;
+        }
+
+        .traveltext2 {
+            position: absolute;
+            top: 164px;
+            left: 88px;
+            font-family: cursive;
+        }
+
+        .background {
+            background: rgba(79, 110, 146, 0.7) url('building.jpg');
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        h1 {
+            width: 100%;
+            height: 100vh;
+            font-size: 40px;
+        }
+
+        .boxmain1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+        }
+
+        .boxmain2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+
+        .boxmain3 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+        }
+
+        .firstsection {
+            text-align: center;
+            color: white;
+        }
+
+        .italy {
+            margin: 60px 40px;
+        }
+
+        #firstpara {
+            padding: 23px 50px;
+            font-family: cursive;
+        }
+
+        .place1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .paris {
+            margin: 60px 40px;
+        }
+
+        #secondpara {
+            padding: 23px 50px;
+            font-family: cursive;
+        }
+
+        .place2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        img {
+            margin: 10px 40px;
+            width: 275px;
+            height: 183px;
+        }
+
+        #thirdpara {
+            padding: 23px 105px;
+            font-family: cursive;
+        }
+
+        .place3 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .endbox {
+            background-color: rgb(0, 0, 0);
+            border: 1px solid lightgray;
+            width: 100%;
+            min-height: 100px;
+            float: left;
+            text-align: center;
+            
+        }
+
+        .fa {
+            width: 30px;
+            height: 18px;
+            border: 1px solid black;
+            font-size: 17px;
+            text-align: center;
+            margin: 19px 0px 13px 18px;
+            text-decoration: none;
+            padding-top: 8px;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        a.fa-instagram:active {
+            background-color: rgb(59, 3, 57);
+        }
+        a.fa-facebook:active {
+            background-color: rgb(4, 226, 255);
+        }
+        a.fa-twitter:active {
+            background-color: rgb(221, 241, 32);
+        }
+
+        .fa-instagram {
+            background-color: rgb(15, 57, 146);
+            color: white;
+        }
+
+        .fa-facebook {
+            background-color: rgb(21, 116, 240);
+            color: white;
+        }
+
+        .fa-twitter {
+            background-color: rgb(45, 57, 219);
+            color: white;
+        }
+
+        #end-heading {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+        .far{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        .last{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+
+        <ul class="ulist">
+            <img src="Mountain.jpg" alt="Logo" class="image">
+            <li class=" box" id="item1"><a href="Home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li class=" box" id="item2"><a href="#"><i class="fas fa-phone-square"></i>Contact us</a></li>
+            <li class=" box" id="item3"><a href="#firsttext"><i class="fas fa-book-reader"></i>About us</a></li>
+            <li class=" box" id="item4"><a href="#travelbox"><i class="fas fa-bus"></i>Travel</a></li>
+        </ul>
+
+        <div class="rinav">
+            <input type="text" name="search" id="search">
+            <button id="btn-search">Search</button>
+        </div>
+    </nav>
+    <section class="firstsection background" id="firsttext">
+        <h1>
+            This is travelling website Template
+        </h1>
+        <h3 class="traveltext2">About us :</h3>
+        <p class="traveltext">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero saepe quibusdam rem dolorem, quidem aperiam?
+            Vero nostrum nemo cum similique repudiandae labore, ex atque sed hic sapiente debitis est incidunt quas
+            soluta molestiae molestias quisquam dicta accusamus facere nam laudantium nihil! Atque quis quam, fuga
+            dolorem ipsum qui nulla aut, veniam natus quasi eos facilis culpa! Iure praesentium vero asperiores. Rerum
+            nam nostrum iusto, repudiandae porro fuga molestias ad obcaecati officia quos assumenda atque enim cum alias
+            maxime ratione quae nulla consequuntur itaque voluptas eaque doloremque delectus laboriosam unde? Iure, at
+            minima? Perspiciatis iusto architecto aperiam, laborum molestiae laudantium quo velit obcaecati
+            reprehenderit impedit repudiandae. Quisquam, aut fugit. Amet quasi eius exercitationem cupiditate autem!
+            Beatae reiciendis dolores veritatis, voluptatem aliquam esse nemo quod est necessitatibus laboriosam
+            mollitia culpa eaque quis eum hic debitis perferendis? Quia nisi repellat cupiditate pariatur impedit
+            sapiente et minus, tempore earum mollitia nesciunt aut distinctio ab architecto laborum quae aliquam
+            delectus nemo placeat cum eligendi incidunt adipisci! Culpa excepturi deserunt quae placeat magnam hic
+            facere laboriosam nobis voluptatum voluptas praesentium iure, aperiam maiores eos eaque nam modi quod ad
+            odio cum aliquam, dolorum rem id ullam. Amet asperiores adipisci repellat maiores vel, dolorem ipsa error
+            sed!
+        </p>
+    </section>
+    <div id="travelbox">
+        <div class="boxmain1">
+            <div class="italy">
+                <img src="italy.jfif" alt="">
+                <div class="place1">Italy</div>
+            </div>
+            <p id="firstpara" class="italy">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum libero mollitia iure odio vel qui aperiam
+                sit, harum eveniet a Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod in amet
+                neque, eos eius non perspiciatis voluptatum molestias excepturi, aperiam suscipit? Corrupti, inventore
+                doloremque! Asperiores quae ut fugit animi. Exercitationem optio corrupti dignissimos, omnis architecto
+                aut
+                velit ipsam minus earum. A modi voluptas quidem mollitia quo asperiores sit beatae id! Vitae optio amet
+                quisquam, eligendi similique ipsum, modi ex possimus autem, velit unde tempore voluptatum quibusdam iste
+                ducimus expedita.
+            </p>
+        </div>
+        <div class="boxmain2">
+            <div class="paris">
+                <img src="paris.jfif" alt="">
+                <div class="place2">Paris</div>
+            </div>
+            <p id="secondpara" class="paris">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum libero mollitia iure odio vel qui aperiam
+                sit, harum eveniet a Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod in amet
+                neque, eos eius non perspiciatis voluptatum molestias excepturi, aperiam suscipit? Corrupti, inventore
+                doloremque! Asperiores quae ut fugit animi. Exercitationem optio corrupti dignissimos, omnis architecto
+                aut
+                velit ipsam minus earum. A modi voluptas quidem mollitia quo asperiores sit beatae id! Vitae optio amet
+                quisquam, eligendi similique ipsum, modi ex possimus autem, velit unde tempore voluptatum quibusdam iste
+                ducimus expedita.
+            </p>
+        </div>
+        <div class="boxmain3">
+            <div class="india">
+                <img src="india.jpg" alt="" class="india">
+                <div class="place3">India</div>
+            </div>
+            <p id="thirdpara" class="india">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum libero mollitia iure odio vel qui aperiam
+                sit, harum eveniet a Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod in amet
+                neque, eos eius non perspiciatis voluptatum molestias excepturi, aperiam suscipit? Corrupti, inventore
+                doloremque! Asperiores quae ut fugit animi. Exercitationem optio corrupti dignissimos, omnis architecto
+                aut
+                velit ipsam minus earum. A modi voluptas quidem mollitia quo asperiores sit beatae id! Vitae optio amet
+                quisquam, eligendi similique ipsum, modi ex possimus autem, velit unde tempore voluptatum quibusdam iste
+                ducimus expedita.
+            </p>
+        </div>
+    </div>
+    <div id="end-heading endbox" style="color: aliceblue;">Follow us on :</div>
+    <div class="endbox">
+       
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+        <div class="last">  <i class="far fa-copyright"></i>
+            Copyright by Aman Kharbanda </div> 
+    </div>
+      
+  
+
+</body>
+
+</html>
